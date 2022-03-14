@@ -41,7 +41,7 @@ const[tableData, settableData]=useState([])
 
 
 const submit=(e)=>{
-    axios.get(`http://openlibrary.org/search.json?title=${bookname}`)
+    axios.get(`https://openlibrary.org/search.json?title=${bookname}`)
 .then(
     (res)=>{
 
