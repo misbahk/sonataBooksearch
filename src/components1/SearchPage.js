@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BsSearch } from "react-icons/bs";
 import axios from "axios";
 import books from './images/books.jpg'
@@ -96,7 +96,7 @@ const handlePageClick=(e)=>{
          
     <div style={{position:"sticky", top:"0"}}>
          
- <img class="img-fluid" style={{width:"100%", height:"33rem"}} src={books}/>
+ <img class="img-fluid" style={{width:"100%", height:"33rem"}} src={books} alt="booksPhoto"/>
 
 <span style={{position:"absolute", top:"50%", left:"50%", transform:"translate(-50%, -50%)"}}>
    <h1 style={{textShadow:"1px 5px 3px #202020", color:"#ffff"}}>Search your Books and Authors here</h1>
@@ -168,7 +168,7 @@ setDetails(item);
 
   <Card.Body>
     <Card.Title style={{color:"rgb(213 16 98)", borderRadius:"10px", boxShadow:"0px 4px 16px 1px #1e3aa1", fontSize:"26px",
-border:"1px solid #767474", textAlign:"left", padding:"4px", textAlign:"left", border:"0"}}>
+border:"1px solid #767474", textAlign:"left", padding:"4px"}}>
     Author Details</Card.Title>
 
     <spam>
